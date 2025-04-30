@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franki Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Produk Franki</h1>
+    
+  </header>
+
+  <main>
+    <section class="game-selection">
+      <h2>Pilih Product</h2>
+      <div class="game-list">
+        <div class="game-card" onclick="selectGame('SEWA BOT')">
+          <img src="https://d.uguu.se/DBmLeqUX.jpg" alt="SEWA BOT FOR GRUP">
+          <p>SEWA BOT FOR GRUP</p>
+        </div>
+        <div class="game-card" onclick="selectGame('PREMIUM USER')">
+          <img src="https://d.uguu.se/DBmLeqUX.jpg" alt="PREMIUM USER">
+          <p>PREMIUM USER</p>
+        </div>
+        <div class="game-card" onclick="selectGame('JADI BOT')">
+          <img src="https://d.uguu.se/DBmLeqUX.jpg" alt="JADI BOT">
+          <p>JADI BOT</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="topup-form" id="topupForm" style="display:none;">
+      <h2>Isi Format</h2>
+      <form id="formTopup" onsubmit="submitTopup(event)">
+        <label>Username:</label>
+        <input type="text" id="gameId" required>
+
+        <label>Pilih Spek:</label>
+        <select id="nominal">
+        	
+        </select>	
+        <label>Metode Pembayaran:</label>
+        <select id="payment">
+          <option value="Dana">Dana</option>
+          <option value="Qris">Qris</option>
+        </select>
+
+        <button type="submit">Lanjutkan ke WhatsApp</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
